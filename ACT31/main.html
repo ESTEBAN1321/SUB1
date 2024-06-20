@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUB1</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2, h1, h3 {
+            border-bottom: 2px solid #e8491d;
+            padding-bottom: 10px;
+            color: #e8491d;
+        }
+        h1, h2 {
+            margin-top: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        img {
+            vertical-align: middle;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            padding: 5px;
+            background-color: #fff;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            font-size: 90%;
+            color: #c7254e;
+            border-radius: 4px;
+        }
+        .example-table {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Examen Práctico</h2>
+
+    <table>
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+            <td rowspan="4">celda</td>
+            <td rowspan="4">celda</td>
+            <td rowspan="4">celda</td>
+            <td rowspan="4">celda</td>
+        </tr>
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+        <tr>
+            <td colspan="2">celda</td>
+            <td>celda</td>
+            <td>celda</td>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+    </table>
+
+    <h1>Unificación de celdas</h1>
+    <p>En algunas ocasiones, puede ser necesario unificar dos o más celdas en una sola que pasará a ocupar el lugar requerido. Estas unificaciones pueden ser llevadas a cabo con los atributos <code>rowspan</code> (para unificación vertical) y <code>colspan</code> (para unificación horizontal).</p>
+
+    <h1>Rowspan</h1>
+    <p>En este caso, para la unificación vertical de celdas 2 y 5, utilizaremos el atributo de celda <code>rowspan</code>.</p>
+    <img src="img1.png" height="290" alt="Ejemplo Rowspan 1"> 
+    <img src="img2.png" height="90" alt="Ejemplo Rowspan 2">
+    <h3>Ejemplo de <code>rowspan</code>:</h3>
+    <img src="img3.png" height="271" alt="Ejemplo Rowspan 3"> 
+    <img src="img4.png" height="80" alt="Ejemplo Rowspan 4">
+
+    <h1>Colspan</h1>
+    <p>En este caso, para la unificación horizontalmente de celdas 2 y 3, utilizaremos el atributo de celda <code>colspan</code>.</p>
+    <img src="img1.png" height="290" alt="Ejemplo Colspan 1"> 
+    <img src="img2.png" height="90" alt="Ejemplo Colspan 2">
+    <h3>Ejemplo de <code>colspan</code>:</h3>
+    <img src="img5.png" height="271" alt="Ejemplo Colspan 3"> 
+    <img src="img6.png" height="80" alt="Ejemplo Colspan 4">
+
+    <h3>Ejemplo de utilización de <code>rowspan</code> y <code>colspan</code></h3>
+
+    <table class="example-table">
+        <tr>
+            <td>celda 1</td>
+            <td>celda 2</td>
+            <td colspan="2">celda 3</td>
+            <td>celda 4</td>
+        </tr>
+        <tr>
+            <td rowspan="4">celda 5</td>
+            <td rowspan="4">celda 6</td>
+            <td>celda 7</td>
+            <td>celda 8</td>
+            <td rowspan="4">celda 15</td>
+        </tr>
+        <tr>
+            <td>celda 9</td>
+            <td>celda 10</td>
+        </tr>
+        <tr>
+            <td>celda 11</td>
+            <td>celda 12</td>
+        </tr>
+        <tr>
+            <td>celda 13</td>
+            <td>celda 14</td>
+        </tr>
+        <tr>
+            <td>celda 16</td>
+            <td>celda 17</td>
+            <td>celda 18</td>
+            <td>celda 19</td>
+            <td>celda 20</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
